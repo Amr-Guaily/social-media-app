@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 216, 216);
+  border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Form Style */
+.form-container {
+  @apply backdrop-sepia-0 bg-white/20 w-[85%] max-w-[550px] p-5 rounded-md text-center shadow-form border border-white/50 border-r-white/10 border-b-white/10 text-white;
+}
+.form-title {
+  @apply text-5xl text-white/90 font-semibold mb-6;
+}
+.google-btn {
+  @apply bg-white/30 mx-auto flex justify-center items-center gap-2 p-3 rounded-lg cursor-pointer outline-none hover:bg-white/60 font-semibold;
+}
+.glass-input {
+  @apply w-full mb-4 rounded-md py-2 px-4 backdrop-sepia-0 outline-none text-lg bg-white/30 text-white;
+}
+.form-btn {
+  @apply rounded-lg px-[40px] py-2 mt-1 mb-2 bg-white/20 text-white font-semibold text-xl transition-all duration-200 hover:bg-white/60 block mx-auto;
+}
+.glass-input::placeholder {
+  color: white;
+}
+.advidor {
+  @apply my-3 text-lg font-semibold relative before:content-[''] before:absolute before:top-[57%] before:h-[1px] before:w-[45%] before:left-0 before:bg-white/60 after:content-[''] after:absolute after:top-[57%] after:h-[1px] after:w-[45%] after:right-0 after:bg-white/60;
+}
