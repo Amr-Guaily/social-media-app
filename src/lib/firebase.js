@@ -5,11 +5,11 @@ import { getFirestore, collection } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  authDomain: 'social-media-app-fdf4e.firebaseapp.com',
+  projectId: 'social-media-app-fdf4e',
+  storageBucket: 'process.env.REACT_APP_FIREBASE_STORAGE_BUCKET',
+  messagingSenderId: '113839358695',
+  appId: '1:113839358695:web:9b1b337696b10db65e9842',
 };
 
 // Initialize Firebase
